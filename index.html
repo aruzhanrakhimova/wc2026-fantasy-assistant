@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fantasy-помощник по ЧМ-2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>⚽ Fantasy-помощник по ЧМ-2026</h1>
+  <p class="disclaimer">Демо-версия на примерных данных (см. <code>fantasy.md</code>). Цены и очки — иллюстративные, не реальные.</p>
+</header>
+
+<main>
+  <section class="panel" id="setup-panel">
+    <h2>1. Параметры состава</h2>
+    <div class="controls">
+      <label>Бюджет (млн):
+        <input type="number" id="budget-input" value="100" min="50" max="200" step="1">
+      </label>
+      <label>Только команды матча:
+        <select id="team-a"></select>
+        vs
+        <select id="team-b"></select>
+      </label>
+      <label><input type="checkbox" id="match-only-toggle"> Ограничить пул только этими двумя командами</label>
+    </div>
+  </section>
+
+  <section class="panel" id="pool-panel">
+    <h2>2. Пул игроков</h2>
+    <div class="filters">
+      <input type="text" id="search-input" placeholder="Поиск по имени...">
+      <select id="pos-filter">
+        <option value="">Все позиции</option>
+        <option value="GK">GK</option>
+        <option value="DEF">DEF</option>
+        <option value="MID">MID</option>
+        <option value="FWD">FWD</option>
+      </select>
+    </div>
+    <table id="pool-table">
+      <thead><tr><th>Игрок</th><th>Команда</th><th>Поз.</th><th>Цена</th><th>Очки (демо)</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="panel" id="squad-panel">
+    <h2>3. Мой состав (<span id="squad-count">0</span>/15)</h2>
+    <div class="budget-bar">
+      Потрачено: <span id="spent">0</span> / <span id="budget-total">100</span>
+      <div class="bar-track"><div class="bar-fill" id="bar-fill"></div></div>
+    </div>
+    <div class="formation-status" id="formation-status"></div>
+    <table id="squad-table">
+      <thead><tr><th>Игрок</th><th>Команда</th><th>Поз.</th><th>Цена</th><th>C</th><th>VC</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="panel" id="forecast-panel">
+    <h2>4. Прогноз очков на матч</h2>
+    <p>Выбрана пара: <b id="forecast-match">—</b></p>
+    <button id="forecast-btn">Рассчитать прогноз</button>
+    <div id="forecast-result"></div>
+  </section>
+</main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
