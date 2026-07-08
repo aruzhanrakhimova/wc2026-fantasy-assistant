@@ -3,6 +3,7 @@
 const TEAMS = [
   "Аргентина", "Франция", "Бразилия", "Англия",
   "Испания", "Португалия", "Германия", "Нидерланды",
+  "Марокко",
 ];
 
 const PLAYERS = [
@@ -101,6 +102,18 @@ const PLAYERS = [
   { name: "Х. Симонс", team: "Нидерланды", pos: "MID", price: 8.0, points: 38 },
   { name: "К. Гакпо", team: "Нидерланды", pos: "FWD", price: 8.5, points: 39 },
   { name: "М. Депай", team: "Нидерланды", pos: "FWD", price: 8.0, points: 37 },
+
+  // Марокко
+  { name: "Я. Бунну", team: "Марокко", pos: "GK", price: 4.8, points: 21 },
+  { name: "М. Диаз", team: "Марокко", pos: "GK", price: 4.0, points: 15 },
+  { name: "А. Хакими", team: "Марокко", pos: "DEF", price: 6.5, points: 33 },
+  { name: "Н. Аиту Маазу", team: "Марокко", pos: "DEF", price: 5.2, points: 24 },
+  { name: "Р. Сайс", team: "Марокко", pos: "DEF", price: 5.0, points: 23 },
+  { name: "С. Амрабат", team: "Марокко", pos: "MID", price: 6.0, points: 28 },
+  { name: "А. Унаис", team: "Марокко", pos: "MID", price: 5.5, points: 25 },
+  { name: "А. Эззалзули", team: "Марокко", pos: "MID", price: 6.5, points: 30 },
+  { name: "Х. Зиеш", team: "Марокко", pos: "FWD", price: 7.0, points: 32 },
+  { name: "Ю. Эн-Несири", team: "Марокко", pos: "FWD", price: 7.5, points: 34 },
 ];
 
 const FORMATION = { GK: 2, DEF: 5, MID: 5, FWD: 3 };
