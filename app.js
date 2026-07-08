@@ -10,8 +10,8 @@ function initTeamSelects() {
     a.appendChild(new Option(t, t));
     b.appendChild(new Option(t, t));
   });
-  a.value = TEAMS[0];
-  b.value = TEAMS[1];
+  a.value = FEATURED_MATCH.teamA;
+  b.value = FEATURED_MATCH.teamB;
 }
 
 function currentBudget() {

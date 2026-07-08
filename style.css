@@ -21,6 +21,7 @@ header {
 }
 header h1 { margin: 0 0 6px; font-size: 1.6rem; }
 .disclaimer { color: var(--muted); font-size: 0.85rem; margin: 0; }
+.featured-match { color: var(--accent2); font-size: 0.95rem; margin: 8px 0 0; font-weight: 600; }
 main { padding: 20px 32px 60px; display: grid; gap: 20px; }
 .panel {
   background: var(--panel);
